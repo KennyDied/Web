@@ -1,0 +1,30 @@
+<html>
+<head>
+	<link rel="SHORTCUT ICON" href="img/favicon.ico" type="image/x-icon">
+    <title>Лабораторное задание</title>
+</head>
+<body>
+<table>
+<script language="JavaScript">
+    document.write("<tr><td>&nbsp;</td>");
+    for (i = 1; i < 10; i++) document.write("<td><td>"+"&nbsp;</td>");
+    document.write("</tr>"); 
+    var r, g, b, color;
+    for (i = 1; i < 15; i++)
+    {
+        document.write("<tr><td>"  + "&nbsp;</td>");
+        for (j = 1; j < 15; j++){
+ 
+            r = Math.round(255*Math.random()).toString(16);
+            g = Math.round(255*Math.random()).toString(16);
+            b = Math.round(255*Math.random()).toString(16);
+            color = r + g + b;
+ 
+            document.write('<td bgcolor=#' + color + '>'+'#' + color + '</td>');          
+        }
+        document.write("</tr>");
+    }
+</script>
+</table>
+</body>
+</html>
