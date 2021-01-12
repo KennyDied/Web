@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
+html {
+  font-family: "Montserrat", sans-serif;
+}
+
+.content{
+    width: 50%;
+}
+
+.container {
+    display: flex;
+    
+}
