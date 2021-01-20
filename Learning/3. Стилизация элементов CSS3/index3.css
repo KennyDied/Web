@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
+html {
+  font-family: "Montserrat", sans-serif;
+}
+
+.block {
+  padding: 20px; /* Поля */
+  background: #42ffdf; /* Цвет фона */
+  border: 2px solid #3ed8b1; /* Параметры рамки */
+  text-align: center; /* Выравнивание текста по ширине */
+  width: 40%;
+}
+
+.line {
+  padding: 0px;
+  margin: 20px;
+  border-left: 3px dotted red;
+  padding-left: 15px;
+  width: 40%;
+}
+
+.blocks_for_margin{
+  margin: 3%;
+}
+
+table {
+  border: 1px solid grey;
+}
+
+th {
+  border: 1px solid grey;
+}
+
+td {
+  border: 1px solid grey;
+}
+
+.paragraph {
+    padding: 10px; /* Поля */
+    text-align: left; /* Выравнивание текста по ширине */
+    width: 60%;
+}
+
+.examples{
+    padding-left: 40px;
+    text-align: left; /* Выравнивание текста по ширине */
+
+}
+
+
+.example0{
+    font-size: 30px;
+}
+
+.example1{
+    font-size: 1em;
+}
+
+.example2{
+    font-size: 2em;
+}
+
+.example3{
+    font-size: 20pt;
+}
+
+.example4{
+    font-size: 160%;
+}
+
+p[class^="text-shadow"] {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 0;
+  margin-bottom: 0px;
+  width: 40%;
+
+}
+
+.text-shadow-1 {
+  color: white;
+  text-shadow: -2px -2px 0 #bd4220, 2px -2px 0 #661c07, -2px 2px 0 #611f0d, 2px 2px 0 #e04115, 4px 4px 0 rgb(202, 21, 21), 5px 5px 0 white, 6px 6px 0 rgb(104, 18, 18);
+}
+
+.text-shadow-2 {
+  color: #863c3c;
+  text-shadow: -1px -1px rgb(139, 40, 40), 1px 1px rgb(128, 35, 35), 2px 2px #7a7a7a, 3px 3px #757575, 4px 4px #707070, 5px 5px #6b6b6b, 6px 6px #666666, 7px 7px #616161, 8px 8px #5c5c5c, 9px 9px #575757, 10px 10px #525252, 11px 11px #4d4d4d, 18px 18px 30px rgba(0, 0, 0, .4), 18px 18px 10px rgba(0, 0, 0, .4);
+}
+
+.text-shadow-3 {
+  background: #ffffff;
+  color: #ffffff;
+  letter-spacing: .1em;
+  text-shadow: 3px 0 rgba(250, 111, 142, .5), 6px 0 rgba(250, 111, 142, .4), 9px 0 rgba(250, 111, 142, .3), 12px 0 rgba(250, 111, 142, .2), 15px 0 rgba(250, 111, 142, .1);
+}
+
+.text-shadow-4 {
+  color: #FB631E;
+  letter-spacing: .1em;
+  text-shadow: 4px 4px white, 6px 6px #D7CC88;
+}
+
+.text-shadow-5 {
+  color: #fcc105;
+  letter-spacing: .1em;
+  text-shadow: 4px 4px #ff981d, 7px 7px rgba(200, 120, 22, .2);
+}
+
+.text-shadow-6 {
+  color: transparent;
+  text-shadow: 4px -4px rgba(157, 217, 227, .7), -2px -2px rgba(159, 141, 105, .7), 0 2px rgba(254, 216, 21, .7);
+}
+
+.text-shadow-7 {
+  color: grey;
+  text-shadow: 2px 2px black, 4px 4px grey, 6px 6px black, 8px 8px grey, 10px 10px black, 12px 12px grey, 14px 14px black, 16px 16px grey, 18px 18px black, 20px 20px grey, 22px 22px black, 24px 24px grey, 26px 26px black;
+}
+
+.text-shadow-8 {
+  color: white;
+  text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white, 0 0 20px crimson, 0 0 35px crimson, 0 0 40px crimson, 0 0 50px crimson, 0 0 75px crimson;
+}
+
+.text-shadow-9 {
+  color: white;
+  text-shadow: 1px 1px #732372, 1px -1px #732372, -1px 1px #732372, -1px -1px #732372, 3px 3px 6px rgba(0,0,0,.5);
+}
+
