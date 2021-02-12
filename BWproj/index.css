@@ -21,7 +21,9 @@
     height: 100vh;
 
     transition: 1s;
-
+    
+    box-shadow: none;
+    position: none;
 }
 
 
@@ -32,6 +34,8 @@
 
     transition: 1s;
 
+    box-shadow: none;
+    position: none;
 }
 
 .left{
@@ -54,7 +58,6 @@
     height: 480px;
     width: 825px;
     display: inline;
-    
 
 }
 
@@ -82,7 +85,7 @@
     width: 710px;
     height: 240px;
     display: inline;
-    box-shadow: none;
+    
 }
 
 #s__black:hover{
