@@ -3,9 +3,9 @@
 <head>
 	<title>Пиздатые футболки</title>
     <link rel="stylesheet" href="index.css" type="text/css">
-
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -18,14 +18,14 @@
 
 
             <!--Left Part-->
-            <div class="left__wrapper">
+            <div id="left__wrapper">
 
                 <!--Line-->
                 <hr class = "left__line">
 
 
                 <div class="left">
-                    <div class="s__black">
+                    <div class="s__black" onclick="scaleLeftPart()">
                         <P class = "strogi">Строгий</P>
                         <P class = "cherniy">Черный</P>
                     </div>
@@ -34,7 +34,7 @@
 
 
             <!--Right Part-->
-            <div class="right__wrapper">
+            <div id="right__wrapper">
 
                 <!--Button-->
                 <div class="basket__button">
@@ -48,7 +48,7 @@
 
 
                 <div class="right">
-                    <div class="r__white">
+                    <div class="r__white" onclick="scaleRightPart()">
                         <P class = "raspusheniy">Распущенный</P>
                         <P class = "beliy">Белый</P>
                     </div>
