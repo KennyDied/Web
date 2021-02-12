@@ -19,6 +19,9 @@
     background: #202020;
     width: 50%;
     height: 100vh;
+
+    transition: 1s;
+
 }
 
 
@@ -26,6 +29,9 @@
     background: #EEECEC;
     width: 50%;
     height: 100vh;
+
+    transition: 1s;
+
 }
 
 .left{
@@ -44,13 +50,15 @@
 
 
 /*Text blocks*/
-.r__white{   
+#r__white{   
     height: 480px;
     width: 825px;
+    display: inline;
+    
 
 }
 
-.r__white:hover{
+#r__white:hover{
     cursor: pointer;
     transition: 1s;
     -webkit-transform: scale(1.1);
@@ -66,16 +74,18 @@
     7px 7px #85868646;
     }
     
-.r__white:not(:hover){
-transition: 1s;
+#r__white:not(:hover){
+    transition: 1s;
 }
 
-.s__black{
+#s__black{
     width: 710px;
     height: 240px;
+    display: inline;
+    box-shadow: none;
 }
 
-.s__black:hover{
+#s__black:hover{
     cursor: pointer;
     transition: 1s;
     -webkit-transform: scale(1.1);
@@ -91,8 +101,8 @@ transition: 1s;
     7px 7px #85868646;
     }
     
-.s__black:not(:hover){
-transition: 1s;
+#s__black:not(:hover){
+    transition: 1s;
 }
 
 
