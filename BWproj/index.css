@@ -8,7 +8,6 @@
 
 }
 
-
 .main__block{
     display: flex;
     flex-wrap: wrap;
@@ -19,9 +18,7 @@
     background: #202020;
     width: 50%;
     height: 100vh;
-
     transition: 1s;
-    
     box-shadow: none;
     position: none;
 }
@@ -31,9 +28,7 @@
     background: #EEECEC;
     width: 50%;
     height: 100vh;
-
     transition: 1s;
-
     box-shadow: none;
     position: none;
 }
@@ -106,6 +101,23 @@
     
 #s__black:not(:hover){
     transition: 1s;
+}
+
+#new__s__black{
+    text-align: left;
+    color: #ffffff;
+    display: none;
+    transition: 1s;
+}
+
+
+
+#new__r__white{
+    text-align: right;
+    color: #000000;
+    display: none;
+    transition: 1s;
+
 }
 
 
