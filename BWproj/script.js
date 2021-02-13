@@ -87,26 +87,59 @@ function returnAll(){
 
 function showNewLeftPart(){
     var newLeftPartBlock = document.getElementById("new__s__black");
-    newLeftPartBlock.style.display = "inline";
+    newLeftPartBlock.style.display = "flex";
 
     var currentLeftPartBlock = document.getElementById("s__black");
     currentLeftPartBlock.style.display = "none";
+
+    var leftPart = document.getElementsByClassName("left");
+    for( let i = 0; i < leftPart.length; i++){ // проходим циклом по всем элементам массивоподобного объекта
+	    leftPart[i].style.display = "none";
+	}	
+    
+    var leftLine = document.getElementsByClassName("left__line");
+    for( let i = 0; i < leftPart.length; i++){ // проходим циклом по всем элементам массивоподобного объекта
+	    leftLine[i].style.marginBottom = "100px";
+	}	
 }
 
 function showNewRightPart(){
     var newRightPartBlock = document.getElementById("new__r__white");
-    newRightPartBlock.style.display = "inline";
+    newRightPartBlock.style.display = "flex";
 
     var currentRightPartBlock = document.getElementById("r__white");
     currentRightPartBlock.style.display = "none";
+
+    var rightPart = document.getElementsByClassName("right");
+    for( let i = 0; i < rightPart.length; i++){ // проходим циклом по всем элементам массивоподобного объекта
+	    rightPart[i].style.display = "none";
+	}	
+    
+    var rightLine = document.getElementsByClassName("right__line");
+    for( let i = 0; i < rightLine.length; i++){ // проходим циклом по всем элементам массивоподобного объекта
+	    rightLine[i].style.marginBottom = "100px";
+	}	
+
+   
 }
 
 function hideNewLeftPart(){
     var newLeftPartBlock = document.getElementById("new__s__black");
     newLeftPartBlock.style.display = "none";
+
+    var leftPart = document.getElementsByClassName("left");
+    for( let i = 0; i < leftPart.length; i++){ // проходим циклом по всем элементам массивоподобного объекта
+	    leftPart[i].style.display = "flex";
+	}	
 }
 
 function hideNewRightPart(){
     var newRightPartBlock = document.getElementById("new__r__white");
     newRightPartBlock.style.display = "none";
+
+
+    var rightPart = document.getElementsByClassName("right");
+    for( let i = 0; i < rightPart.length; i++){ // проходим циклом по всем элементам массивоподобного объекта
+	    rightPart[i].style.display = "flex";
+	}	
 }

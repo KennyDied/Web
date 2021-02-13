@@ -108,15 +108,22 @@
     color: #ffffff;
     display: none;
     transition: 1s;
+    justify-content: center;
+    align-items: center;
+
 }
 
 
 
 #new__r__white{
-    text-align: right;
+    text-align: left;
     color: #000000;
     display: none;
     transition: 1s;
+    justify-content: center;
+    align-items: center;
+
+ 
 
 }
 
@@ -190,3 +197,132 @@
     height: 7px;
     margin-top: 69px;
 }
+
+/*White side with shirt*/
+
+.pic__shirt__white{
+    display: inline-block;
+    width: 600px;
+    height: 629px;
+
+    background-color:#2E2E2E;
+}
+
+.info__white{
+    display: inline-block;
+    margin-right: 5%;
+}
+
+.info__white p{
+    font-family: Montserrat;
+    margin-bottom: 6%;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 125%;
+    color: #000;
+}
+
+
+
+/*Black side with shirt*/
+
+.pic__shirt__black{
+    display: inline-block;
+    width: 600px;
+    height: 629px;
+
+    background-color:#C4C4C4;
+}
+
+.info__black{
+    display: inline-block;
+    margin-left: 5%;
+}
+
+.info__black p{
+    font-family: Montserrat;
+    margin-bottom: 6%;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 125%;
+    color: #FFFFFF;
+}
+
+/*Размерная сетка*/
+.sizes{
+    margin-bottom: 10%;
+}
+.sizes p{
+    margin-bottom: 1%;
+}
+
+.circles{
+    display: flex;
+}
+.circle{
+    margin-right: 20px;
+    display: inline-block;
+    width: 40px; 
+    height: 40px;
+    background: #C4C4C4;
+    border-radius: 50%;
+    padding: 5px;
+    vertical-align: top;
+    text-align: center;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 125%;
+    color: #000000;
+
+}
+.circle::after{
+    content: '';
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.circle:hover{
+    background: #7a7a7a;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/*Button add to bascket*/
+.rectangle{
+    width: 300px;
+    height: 40px;
+    background: #C4C4C4;
+    border-radius: 40px;
+    padding: 5px;
+    vertical-align: top;
+    text-align: center;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 125%;
+    color: #000000;
+}
+
+.rectangle::after{
+    content: ' ';
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.rectangle:hover{
+    background: #7a7a7a;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+
