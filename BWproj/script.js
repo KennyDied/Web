@@ -86,6 +86,8 @@ function returnAll(){
 }
 
 function showNewLeftPart(){
+    slideIndex = 1;
+    showSlides(slideIndex);
 
     var currentLeftPartBlock = document.getElementById("s__black");
     currentLeftPartBlock.style.display = "none";
@@ -112,6 +114,8 @@ function showNewLeftPart(){
 
 function showNewRightPart(){
     
+    slideIndex = 1;
+    showSlides(slideIndex);
 
     var currentRightPartBlock = document.getElementById("r__white");
     currentRightPartBlock.style.display = "none";
@@ -133,11 +137,10 @@ function showNewRightPart(){
     for( let i = 0; i < rightLine.length; i++){ // проходим циклом по всем элементам массивоподобного объекта
 	    rightLine[i].style.marginBottom = "100px";
 	}	
-
-   
 }
 
 function hideNewLeftPart(){
+    var slideIndex = 1;
     var newLeftPartBlock = document.getElementById("new__s__black");
     newLeftPartBlock.style.display = "none";
     newLeftPartBlock.style.opacity = "0";
@@ -149,6 +152,7 @@ function hideNewLeftPart(){
 }
 
 function hideNewRightPart(){
+    slideIndex = 1;
     var newRightPartBlock = document.getElementById("new__r__white");
     newRightPartBlock.style.display = "none";
     newRightPartBlock.style.opacity = "0";
@@ -159,13 +163,6 @@ function hideNewRightPart(){
 	    rightPart[i].style.display = "flex";
 	}	
 }
-
-
-
-
-
-
-
 
 //Slider
 

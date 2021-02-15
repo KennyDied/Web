@@ -330,9 +330,8 @@
 
 /*Slider*/
 
-/* Собственно сам слайдер */
 .slider{
-    max-width: 90%;
+    max-width: 50%;
     position: relative;
     margin: auto;
     height: 300px;
@@ -370,7 +369,18 @@
 .slider .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
-
+/* Заголовок слайда */
+.slideText {
+    position: absolute;
+    color: #fff;
+    font-size: 35px;
+    /* Выравнивание текста по горизонтали и по вертикали*/
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /* Тень*/
+    text-shadow: 1px 1px 1px #000, 0 0 1em #000;
+}
 /* Кружочки */
 .slider-dots {
     text-align: center;
