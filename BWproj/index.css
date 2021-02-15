@@ -106,8 +106,10 @@
 #new__s__black{
     text-align: left;
     color: #ffffff;
+    opacity: 0;
     display: none;
     transition: 1s;
+
     justify-content: center;
     align-items: center;
 
@@ -118,6 +120,7 @@
 #new__r__white{
     text-align: left;
     color: #000000;
+    opacity: 0;
     display: none;
     transition: 1s;
     justify-content: center;

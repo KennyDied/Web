@@ -86,14 +86,21 @@ function returnAll(){
 }
 
 function showNewLeftPart(){
-    var newLeftPartBlock = document.getElementById("new__s__black");
-    newLeftPartBlock.style.display = "flex";
 
     var currentLeftPartBlock = document.getElementById("s__black");
     currentLeftPartBlock.style.display = "none";
 
+
+    var newLeftPartBlock = document.getElementById("new__s__black");
+    $("#new__s__black" ).fadeIn( 500, "linear", function(){ // плавно изменяя прозрачность отображаем элементы <div> в документе
+        $("#new__s__black").css("display", "flex"); // добавляем текстовую информации в элемент с классом status
+        $("#new__s__black").css("opacity", "1");
+    });
+    //newLeftPartBlock.style.display = "flex";
+
+
     var leftPart = document.getElementsByClassName("left");
-    for( let i = 0; i < leftPart.length; i++){ // проходим циклом по всем элементам массивоподобного объекта
+    for( let i = 0; i < leftPart.length; i++){ // пыроходим циклом по всем элементам массивоподобного объекта
 	    leftPart[i].style.display = "none";
 	}	
     
@@ -104,11 +111,18 @@ function showNewLeftPart(){
 }
 
 function showNewRightPart(){
-    var newRightPartBlock = document.getElementById("new__r__white");
-    newRightPartBlock.style.display = "flex";
+    
 
     var currentRightPartBlock = document.getElementById("r__white");
     currentRightPartBlock.style.display = "none";
+
+
+    var newRightPartBlock = document.getElementById("new__r__white");
+    $("#new__r__white" ).fadeIn( 500, "linear", function(){ // плавно изменяя прозрачность отображаем элементы <div> в документе
+        $("#new__r__white").css("display", "flex"); // добавляем текстовую информации в элемент с классом status
+        $("#new__r__white").css("opacity", "1");
+    });
+    //newRightPartBlock.style.display = "flex";
 
     var rightPart = document.getElementsByClassName("right");
     for( let i = 0; i < rightPart.length; i++){ // проходим циклом по всем элементам массивоподобного объекта
@@ -126,6 +140,7 @@ function showNewRightPart(){
 function hideNewLeftPart(){
     var newLeftPartBlock = document.getElementById("new__s__black");
     newLeftPartBlock.style.display = "none";
+    newLeftPartBlock.style.opacity = "0";
 
     var leftPart = document.getElementsByClassName("left");
     for( let i = 0; i < leftPart.length; i++){ // проходим циклом по всем элементам массивоподобного объекта
@@ -136,6 +151,7 @@ function hideNewLeftPart(){
 function hideNewRightPart(){
     var newRightPartBlock = document.getElementById("new__r__white");
     newRightPartBlock.style.display = "none";
+    newRightPartBlock.style.opacity = "0";
 
 
     var rightPart = document.getElementsByClassName("right");
