@@ -399,6 +399,9 @@
 .slider-dots_item:hover {
     background-color: #aaa;
 }
+
+
+
 /* Анимация слайдов */
 .slider .item {
     -webkit-animation-name: fade;
