@@ -35,8 +35,10 @@
 
 .left{
     display: flex;
+    opacity: 1;
     justify-content: center;
     margin-top: 350px;
+    transition: 3s;
 }
 
 
@@ -80,7 +82,7 @@
     width: 710px;
     height: 240px;
     display: inline;
-
+    opacity: 1;
 }
 
 #s__black:hover{
@@ -97,7 +99,7 @@
     5px 5px #85868646,
     6px 6px #85868646,
     7px 7px #85868646;
-    }
+}
     
 #s__black:not(:hover){
     transition: 1s;
@@ -112,7 +114,6 @@
 
     justify-content: center;
     align-items: center;
-
 }
 
 
@@ -125,9 +126,6 @@
     transition: 1s;
     justify-content: center;
     align-items: center;
-
- 
-
 }
 
 
@@ -207,7 +205,6 @@
     display: inline-block;
     width: 600px;
     height: 629px;
-
     background-color:#2E2E2E;
 }
 
@@ -228,7 +225,6 @@
 
 
 /*Black side with shirt*/
-
 .pic__shirt__black{
     display: inline-block;
     width: 600px;
@@ -251,7 +247,8 @@
     color: #FFFFFF;
 }
 
-/*Размерная сетка*/
+
+/*Size*/
 .sizes{
     margin-bottom: 10%;
 }
@@ -329,99 +326,38 @@
 
 
 /*Slider*/
+.slider-box{
+    position:relative;
+    width:320px;
+    height:210px;
+    overflow:hidden;
+  }
+  
+  .slider{
+    position:relative;
+    width:10000px;
+    height:210px;
+  }
 
-.slider{
-    max-width: 50%;
-    position: relative;
-    margin: auto;
-    height: 300px;
-    margin-bottom: 15px;
-}
-/* Картинка мастабируется по отношению к родительскому элементу */
-.slider .item img {
-    object-fit: cover;
-    width: 100%;
-    height: 300px;
-    border: none !important;
-    box-shadow: none !important;
-}
-/* Кнопки вперед и назад */
-.slider .prev, .slider .next {
-    cursor: pointer;
-    position: absolute;
-    top: 0;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-}
-.slider .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-/* При наведении на кнопки добавляем фон кнопок */
-.slider .prev:hover,
-.slider .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-/* Заголовок слайда */
-.slideText {
-    position: absolute;
-    color: #fff;
-    font-size: 35px;
-    /* Выравнивание текста по горизонтали и по вертикали*/
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    /* Тень*/
-    text-shadow: 1px 1px 1px #000, 0 0 1em #000;
-}
-/* Кружочки */
-.slider-dots {
-    text-align: center;
-}
-.slider-dots_item{
-    cursor: pointer;
-    height: 12px;
-    width: 12px;
-    margin: 0 2px;
-    background-color: #ddd;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
-.active,
-.slider-dots_item:hover {
-    background-color: #aaa;
-}
+  .slider img{
+    float:left;
+  }
 
+  .slider-box .prev, .slider-box .next{
+    position:absolute;
+    top:100px;
+    display:block;
+    width:29px;
+    height:29px;
+    cursor:pointer;
+  }
 
+  .slider-box .prev{
+    left:10px;
+    background:url(images/left_slider_control.png) no-repeat 0 0;
+  }
 
-/* Анимация слайдов */
-.slider .item {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-@-webkit-keyframes fade {
-    from {
-        opacity: .4
-    }
-    to {
-        opacity: 1
-    }
-}
-@keyframes fade {
-    from {
-        opacity: .4
-    }
-    to {
-        opacity: 1
-    }
-}
+  .slider-box .next{
+    right:10px;
+    background:url(/images/right_slider_control.png) no-repeat -29px 0;
+  }
