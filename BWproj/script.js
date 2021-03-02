@@ -3,6 +3,14 @@ const screenH = window.screen.height;
 
 
 $(document).ready(function(){
+
+    var slideNow = 1;
+    var slideCount = $('.slidewrapper').children().length/2;
+    var slideInterval = 3000;
+    var navBtnId = 0;
+    var translateWidth = 0;
+    var switchInterval = setInterval(nextSlide, slideInterval);
+
     var clicked = false;
 
     $(".text").bind("click",function (e){
@@ -100,6 +108,9 @@ function hideNewRightPart(){
 //Return All//
 function returnAll(){
     
+    slideNow = 1;
+    navBtnId = 0;
+    translateWidth = 0;
     hideNewRightPart();
     
     hideNewLeftPart();
@@ -128,24 +139,23 @@ function returnAll(){
 
 
 //Slider//
-var slideNow = 1;
-var slideCount = $('#slidewrapper').children().length;
-var slideInterval = 3000;
-var navBtnId = 0;
-var translateWidth = 0;
-var switchInterval = setInterval(nextSlide, slideInterval);
 
-    $('#viewport').hover(function() {
+
+ 
+
+    $('.viewport').hover(function() {
         clearInterval(switchInterval);
     }, function() {
         switchInterval = setInterval(nextSlide, slideInterval);
     });
 
-    $('#next-btn').click(function() {
-        nextSlide();
+    $('.next-btn').click(function() {
+        let str = this.getAttribute('id')
+        //alert(str.split('_')[0])
+        nextSlide(str.split('_')[0]);
     });
 
-    $('#prev-btn').click(function() {
+    $('.prev-btn').click(function() {
         prevSlide();
     });
 
@@ -153,8 +163,8 @@ var switchInterval = setInterval(nextSlide, slideInterval);
         navBtnId = $(this).index();
 
         if (navBtnId + 1 != slideNow) {
-            translateWidth = -$('#viewport').width() * (navBtnId);
-            $('#slidewrapper').css({
+            translateWidth = -$('.viewport').width() * (navBtnId);
+            $('.slidewrapper').css({
                 'transform': 'translate(' + translateWidth + 'px, 0)',
                 '-webkit-transform': 'translate(' + translateWidth + 'px, 0)',
                 '-ms-transform': 'translate(' + translateWidth + 'px, 0)',
@@ -164,13 +174,14 @@ var switchInterval = setInterval(nextSlide, slideInterval);
     });
 
 
-function nextSlide() {
+function nextSlide(slider_side) {
+    
     if (slideNow == slideCount || slideNow <= 0 || slideNow > slideCount) {
-        $('#slidewrapper').css('transform', 'translate(0, 0)');
+        $('#' + slider_side + '_' + 'slidewrapper').css('transform', 'translate(0, 0)');
         slideNow = 1;
     } else {
-        translateWidth = -$('#viewport').width() * (slideNow);
-        $('#slidewrapper').css({
+        translateWidth = -$('#' + slider_side + '_' + 'viewport').width() * (slideNow);
+        $('#' + slider_side + '_' + 'slidewrapper').css({
             'transform': 'translate(' + translateWidth + 'px, 0)',
             '-webkit-transform': 'translate(' + translateWidth + 'px, 0)',
             '-ms-transform': 'translate(' + translateWidth + 'px, 0)',
@@ -179,18 +190,18 @@ function nextSlide() {
     }
 }
 
-function prevSlide() {
+function prevSlide(slider_side) {
     if (slideNow == 1 || slideNow <= 0 || slideNow > slideCount) {
-        translateWidth = -$('#viewport').width() * (slideCount - 1);
-        $('#slidewrapper').css({
+        translateWidth = -$('#' + slider_side + '_' + 'viewport').width() * (slideCount - 1);
+        $('#' + slider_side + '_' + 'slidewrapper').css({
             'transform': 'translate(' + translateWidth + 'px, 0)',
             '-webkit-transform': 'translate(' + translateWidth + 'px, 0)',
             '-ms-transform': 'translate(' + translateWidth + 'px, 0)',
         });
         slideNow = slideCount;
     } else {
-        translateWidth = -$('#viewport').width() * (slideNow - 2);
-        $('#slidewrapper').css({
+        translateWidth = -$('#' + slider_side + '_' + 'viewport').width() * (slideNow - 2);
+        $('#' + slider_side + '_' + 'slidewrapper').css({
             'transform': 'translate(' + translateWidth + 'px, 0)',
             '-webkit-transform': 'translate(' + translateWidth + 'px, 0)',
             '-ms-transform': 'translate(' + translateWidth + 'px, 0)',
