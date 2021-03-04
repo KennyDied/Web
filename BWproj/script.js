@@ -12,30 +12,46 @@ $(document).ready(function(){
     var switchInterval = setInterval(nextSlide, slideInterval);
 
     var clicked = false;
-
+    if (clicked = true){
+        setTimeout(() => {
+            all();
+        }, 600);
+    } else {
+        all();
+    }
+    
+function all(){
     $(".text").bind("click",function (e){
-        
+        clicked = true;
         if (this.getAttribute('id') == "s__black"){
-          scaleLeftPart();
-          showNewLeftPart();
-          $("#right__wrapper").bind("click", function (e){
-               hideNewLeftPart();
-               returnAll();
-               $("#right__wrapper").unbind("click");
-          });
+            
+            scaleLeftPart();
+            showNewLeftPart();
+        
+            setTimeout(() => {
+                $("#right__wrapper").bind("click", function (e){
+                    hideNewLeftPart();
+                    returnAll();
+                    $("#right__wrapper").unbind("click");
+                });
+            }, 600);
         } else {
             scaleRightPart();
             showNewRightPart();
-            $("#left__wrapper").bind("click", function(e){
-                hideNewRightPart();
-                returnAll();
-                $("#left__wrapper").unbind("click")
-            })
-        };
-        
-    });
 
-    
+            setTimeout(() => {
+                $("#left__wrapper").bind("click", function(e){
+                    hideNewRightPart();
+                    returnAll();
+                    $("#left__wrapper").unbind("click")
+
+                })
+            }, 600);
+        };
+
+    });
+}
+
 
 //Scale parts//
 function scaleLeftPart(){
@@ -156,7 +172,8 @@ function returnAll(){
     });
 
     $('.prev-btn').click(function() {
-        prevSlide();
+        let str = this.getAttribute('id')
+        prevSlide(str.split('_')[0]);
     });
 
     $('.slide-nav-btn').click(function() {
