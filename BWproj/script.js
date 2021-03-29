@@ -4,6 +4,10 @@ const screenH = window.screen.height;
 
 $(document).ready(function(){
 
+    /*preloader*/
+    $(".loader_inner").fadeOut();
+	$(".loader").delay(500).fadeOut("slow");
+
     var slideNow = 1;
     var slideCount = $('.slidewrapper').children().length/2;
     var slideInterval = 3000;
@@ -155,10 +159,6 @@ function returnAll(){
 
 
 //Slider//
-
-
- 
-
     $('.viewport').hover(function() {
         clearInterval(switchInterval);
     }, function() {
@@ -192,7 +192,6 @@ function returnAll(){
 
 
 function nextSlide(slider_side) {
-    
     if (slideNow == slideCount || slideNow <= 0 || slideNow > slideCount) {
         $('#' + slider_side + '_' + 'slidewrapper').css('transform', 'translate(0, 0)');
         slideNow = 1;

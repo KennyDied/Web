@@ -46,7 +46,6 @@
     display: flex;
     justify-content: center;
     margin-top: 230px;
-
 }
 
 
@@ -55,7 +54,6 @@
     height: 480px;
     width: 825px;
     display: inline;
-
 }
 
 #r__white:hover{
@@ -115,8 +113,6 @@
     justify-content: center;
     align-items: center;
 }
-
-
 
 #new__r__white{
     text-align: left;
@@ -200,7 +196,6 @@
 }
 
 /*White side with shirt*/
-
 .pic__shirt__white{
     display: inline-block;
     width: 600px;
@@ -414,9 +409,36 @@
     background-color:#C4C4C4
 }
 
-
-
-
 .slide-nav-btn:hover {
     cursor: pointer;
+}
+
+
+
+/*Preloader*/
+.loader{
+    background:#212121;
+    height:100%;
+    left:0;
+    position:fixed;
+    right:0;
+    top:0;
+    width:100%;
+    z-index:9999
+}
+.loader .loader_inner{background-image:url(images/preloader.gif);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-color:#212121;
+    height:50%;
+    width:50%;
+    left:25%;
+    top:20%;
+    position:absolute;
+    text-align:center
+}
+.loader .loader_inner img{
+    height:50px;
+    margin-top:25px
 }
