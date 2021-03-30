@@ -36,13 +36,34 @@
   margin-top: 69px;
 }
 
+
+/*list of goods*/
 .goods {
   /* медиа-запросы */
   width: 700px;
   height: 520px;
-
   border: 1px solid #c4c4c4;
 }
+
+.goods__container{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.goods__adding__item{
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  width: 100%;
+}
+
+.goods__adding__item__content{
+  
+}
+
 
 /*Input forms*/
 .info__about__shipping {
@@ -52,13 +73,7 @@
     justify-content: space-between; */
 }
 
-.order__details__forms {
-  position: relative;
 
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
 
 .info__about__shipping__text {
   font-family: Montserrat;
@@ -69,9 +84,15 @@
   color: #000000;
 }
 
+.order__details__forms {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .order__form {
   margin-top: 60px;
-
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
