@@ -1,118 +1,177 @@
-* { 
-    margin: 0; 
-    padding: 0; 
-    background: #E5E5E5;
+* {
+  margin: 0;
+  padding: 0;
+  background: #e5e5e5;
 }
 
 /*Blocks*/
-.wrapper{
-    
+.wrapper {
 }
 
-.order__block{
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    flex-direction: column;
-    -webkit-box-align: center;
-    align-items: center;
+.order__block {
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
 }
 
-.main__block{
-    justify-content: space-between;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    /* Менять через медиа-запросы */
-    width: 1640px;
+.main__block {
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  /* Менять через медиа-запросы */
+  width: 1640px;
 }
-
 
 /*Line*/
-.line{
-    border: none;
-    margin-bottom: 98px;
-    background-color: #202020;
-    width: 100%;
-    height: 7px;
-    margin-top: 69px;
+.line {
+  border: none;
+  margin-bottom: 98px;
+  background-color: #202020;
+  width: 100%;
+  height: 7px;
+  margin-top: 69px;
 }
 
-.goods{
-    /* медиа-запросы */
-    width: 700px;
-    height: 520px;
+.goods {
+  /* медиа-запросы */
+  width: 700px;
+  height: 520px;
 
-    border: 1px solid #C4C4C4;
-
+  border: 1px solid #c4c4c4;
 }
 
-.info__about__shipping{
-    width: 700px;
-    /* display: flex;
+/*Input forms*/
+.info__about__shipping {
+  width: 700px;
+  /* display: flex;
     flex-wrap: wrap;
     justify-content: space-between; */
 }
 
-.order__details__forms{
-    position: relative;
+.order__details__forms {
+  position: relative;
 
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-.info__about__shipping__text{
+.info__about__shipping__text {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 38px;
+  line-height: 150%;
+  color: #000000;
+}
+
+.order__form {
+  margin-top: 60px;
+
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form__text {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  /* line-height: 150%; */
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.input__form {
+  width: 100%;
+  height: 51px;
+  border: none;
+  background: rgba(196, 196, 196, 0.5);
+  font-size: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 20px;
+}
+
+.phone .mail {
+    width: 297px;
+}
+
+.nota {
+    height: 250px;
+}
+
+/*To pay side*/
+.to__pay {
+    width: 700px;
+    height: 500px;
+    border: 1px solid #c4c4c4;
+}
+
+.to__pay__content{
+    padding-top: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+
+.to__pay__total__price p{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 125%;
+    color: #000000;
+    display: inline-block;
+    margin-bottom: 56px;
+}
+
+.to__pay__items p{
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
-    font-size: 38px;
+    font-size: 24px;
     line-height: 150%;
     color: #000000;
-    
+    display: inline-block;
+    margin-bottom: 56px;
 }
 
-.order__form{
-    margin-top: 60px;
+/*Button add to bascket*/
+.rectangle{
+    margin-top: 100px;
+    width: 350px;
+    height: 70px;
+    background: #C4C4C4;
+    border-radius: 40px;
+    padding: 5px;
+    vertical-align: top;
+    text-align: center;
 
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    flex-direction: column;
-    width: 100%;
-}
-
-.form__text{
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
-    font-size: 30px;
-    /* line-height: 150%; */
-    color: rgba(0, 0, 0, 0.7);
+    font-size: 22px;
+    line-height: 125%;
+    color: #000000;
 }
 
-.input__form{
-    width: 100%;
-    height: 51px;
-    border: none;
-    background: rgba(196, 196, 196, 0.5);
-    font-size: 30px;
-    padding-left: 10px;
-    padding-right: 10px;
+.rectangle::after{
+    content: ' ';
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
 }
 
-.phone{
-    width: 297px;
-}
-
-.mail{
-    width: 297px;
-    
-}
-
-
-.to__pay{
-    width: 700px;
-    height: 600px;
-    border: 1px solid #C4C4C4;
+.rectangle:hover{
+    background: #7a7a7a;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
 }
