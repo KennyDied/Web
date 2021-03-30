@@ -1,62 +1,78 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Корзина</title>
-    <link rel="stylesheet" href="basket.css" type="text/css">
+  <head>
+    <title>Корзина</title>
+    <link rel="stylesheet" href="basket.css" type="text/css" />
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-</head>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <div class="wrapper">
-        <hr class = "line">
+      <hr class="line" />
+      <div class="order__block">
         <div class="main__block">
-            <div class = "left__part">
-                <div class = "goods">
-                    <p>тестируем гит у Олеси</p>
-                    
-                </div>
-                <div class = "info__about__shipping">
-                    <p class = "info__about__shipping__text">Данные о доставке</p>
-                    <p class = "form__text">Имя</p>
-                    <input class = "input__form" type="text">
-                    <p class = "form__text">Фамилия</p>
-                    <input class = "input__form" type="text">
-                    <p class = "form__text">Отчество</p>
-                    <input class = "input__form" type="text">
-                    <p class = "form__text">Телефон</p>
-                    <input class = "input__form" type="text">
-                    <p class = "form__text">Эл.почта</p>
-                    <input class = "input__form" type="text">
-                    <p class = "form__text">Страна</p>
-                    <input class = "input__form" type="text">
-                    <p class = "form__text">Город</p>
-                    <input class = "input__form" type="text">
-                    <p class = "form__text">Край/Область/Регион</p>
-                    <input class = "input__form" type="text">
-                    <p class = "form__text">Улица, дом, квартира</p>
-                    <input class = "input__form" type="text">
-                    <p class = "form__text">Почтовый индекс</p>
-                    <input class = "input__form" type="text">
-                    <p class = "form__text">Примечание к заказу</p>
-                    <input class = "input__form" type="textarea">
-                </div>
-            </div>
+          <div class="goods"></div>
 
+          <div class="to__pay">
+            <p>К оплате</p>
+          </div>
 
-
-
-
-            <div class ="right__part">
-                <div class = "to__pay">
-                    <p>К оплате</p>
-
-                </div>
-            </div>
-
+          <div class="info__about__shipping">
+            <p class="info__about__shipping__text">Данные о доставке</p>
+            <form class="order__details__forms">
+              <div class="order__form">
+                <p class="form__text">Имя</p>
+                <input class="input__form" type="text" />
+              </div>
+              <div class="order__form">
+                <p class="form__text">Фамилия</p>
+                <input class="input__form" type="text" />
+              </div>
+              <div class="order__form">
+                <p class="form__text">Отчество</p>
+                <input class="input__form" type="text" />
+              </div>
+              <div class="order__form phone">
+                <p class="form__text">Телефон</p>
+                <input class="input__form " type="text" />
+              </div>
+              <div class="order__form mail">
+                <p class="form__text">Эл.почта</p>
+                <input class="input__form " type="text" />
+              </div>
+              <div class="order__form">
+                <p class="form__text">Страна</p>
+                <input class="input__form" type="text" />
+              </div>
+              <div class="order__form">
+                <p class="form__text">Город</p>
+                <input class="input__form" type="text" />
+              </div>
+              <div class="order__form">
+                <p class="form__text">Край/Область/Регион</p>
+                <input class="input__form" type="text" />
+              </div>
+              <div class="order__form">
+                <p class="form__text">Улица, дом, квартира</p>
+                <input class="input__form" type="text" />
+              </div>
+              <div class="order__form">
+                <p class="form__text">Почтовый индекс</p>
+                <input class="input__form" type="text" />
+              </div>
+              <div class="order__form">
+                <p class="form__text">Примечание к заказу</p>
+                <input class="input__form" type="textarea" />
+              </div>
+            </form>
+          </div>
         </div>
+      </div>
     </div>
-</body>
-
+  </body>
 </html>
