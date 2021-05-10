@@ -120,8 +120,23 @@
   margin-bottom: 20px;
 }
 
-.phone .mail {
-    width: 297px;
+
+.order__form__phone{
+  margin-top: 60px;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  width: 300px;
+}
+
+.order__form__mail{
+  margin-top: 60px;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  width: 300px;
 }
 
 .nota {
