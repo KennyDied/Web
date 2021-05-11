@@ -61,8 +61,27 @@
   width: 100%;
 }
 
-.goods__adding__item__content{
-  
+.goods__adding__item__content p{
+
+}
+
+.t__short__name__text{
+  font-family: Montserrat;
+  font-size: 24px;
+  line-height: 150%;
+  color: #000000;
+}
+.t__short__price__text{
+  font-family: Montserrat;
+  font-size: 24px;
+  line-height: 150%;
+  color: #353535;
+}
+.t__short__size__text{
+  font-family: Montserrat;
+  font-size: 18px;
+  line-height: 150%; 
+  color: #000000;
 }
 
 
