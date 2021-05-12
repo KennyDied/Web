@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  background: #e5e5e5;
+  background: #eeecec;
 }
 
 
@@ -61,10 +61,7 @@
   width: 100%;
 }
 
-.goods__adding__item__content p{
-
-}
-
+/*list of goods content*/
 .t__short__name__text{
   font-family: Montserrat;
   font-size: 24px;
@@ -84,6 +81,32 @@
   color: #000000;
 }
 
+
+/*list of goods plus minus button*/
+.button__minus__plus{
+  background-color: #C4C4C4;
+  border: none;
+  color: #000000;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+
+.button__minus__plus {
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.button__minus__plus:hover {
+  background-color: #c4c4c485; /* Green */
+  color: white;
+}
 
 /*Input forms*/
 .info__about__shipping {
@@ -125,7 +148,6 @@
   font-style: normal;
   font-weight: normal;
   font-size: 30px;
-  /* line-height: 150%; */
   color: rgba(0, 0, 0, 0.7);
 }
 
