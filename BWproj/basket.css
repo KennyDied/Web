@@ -93,10 +93,8 @@
   text-decoration: none;
   display: inline-block;
   font-size: 18px;
-  margin: 4px 2px;
   cursor: pointer;
 }
-
 
 .button__minus__plus {
   -webkit-transition-duration: 0.4s; /* Safari */
@@ -106,6 +104,19 @@
 .button__minus__plus:hover {
   background-color: #c4c4c485; /* Green */
   color: white;
+}
+
+.quantity{
+  background-color: #C4C4C4;
+  border: none;
+  color: #000000;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+
 }
 
 /*Input forms*/

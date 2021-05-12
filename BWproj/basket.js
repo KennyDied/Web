@@ -1,10 +1,7 @@
 
-//button__minus__plus - поставил на обе кнопки, изначально было bt_plus и bt_plus - поэтому нихуя не работает
-
-
 $(document).ready(function(){
     // Убавляем кол-во по клику
-    $('.quantity_inner .bt_plus').click(function() {
+    $('.quantity_inner .bt_minus').click(function() {
     	let $input = $(this).parent().find('.quantity');
     	let count = parseInt($input.val()) - 1;
     	count = count < 1 ? 1 : count;
