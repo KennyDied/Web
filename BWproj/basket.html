@@ -12,6 +12,8 @@
         crossorigin="anonymous">
     </script>
     <script src="basket.js"></script>
+    <script src="https://snipp.ru/cdn/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://snipp.ru/cdn/autosize/dist/autosize.min.js"></script>
 </head>
 
 <body>
@@ -37,6 +39,9 @@
                                         <button class="button__minus__plus bt_minus">-</button>
                                         <input type="text" class="quantity" value="1" data-max-count="20">
                                         <button class="button__minus__plus bt_plus">+</button>
+                                    </div>
+                                    <div class="delete__button">
+                                        <img class = "delete__button__pic" src = "images/move_to_trash_icon.png">
                                     </div>
                                 </div>
 
@@ -112,7 +117,7 @@
                         </div>
                         <div class="order__form">
                             <p class="form__text">Примечание к заказу</p>
-                            <textarea class="input__form nota" placeholder="hui"></textarea>
+                            <textarea class="input__form nota" id="textarea" placeholder="Ваши пожелания..."></textarea>
                         </div>
                         <div class="rectangle">
                             Далее  →

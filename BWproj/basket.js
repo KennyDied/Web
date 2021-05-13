@@ -26,4 +26,7 @@ $(document).ready(function(){
     		this.value = parseInt($(this).data('max-count'));
     	}	
     });	
+
+	autosize($('#textarea'));
+
 });	
