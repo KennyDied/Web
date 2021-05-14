@@ -227,6 +227,18 @@
 }
 
 
+/*delivery.html part*/
+.choice__form{
+  width: 100%;
+  height: 51px;
+  border: none;
+  background: rgba(196, 196, 196, 0.5);
+  font-size: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 20px;
+}
+
 /*To pay side*/
 .to__pay {
     width: 700px;

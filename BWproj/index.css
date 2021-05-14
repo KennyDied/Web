@@ -164,14 +164,24 @@
     }
 
 
-/*Button*/
-.basket__button{
-    width: 33px;
-    height: 37px;
-    float: right;
-    margin-top: 16px;
-    margin-right: 18px;
+/*Nav buttons*/
+.nav__button__container{
 
+}
+
+.nav__button{
+    float: right;
+    margin-top: 25px;
+    margin-right: 18px;
+    text-transform: uppercase;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 150%;
+    text-decoration: none;
+    text-align: right;
+    color: #202020;
 }
 
 /*Lines*/
