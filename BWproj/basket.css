@@ -313,3 +313,46 @@
     transition: 0.3s;
 }
 
+
+
+/*css for delivery.html*/
+
+.promocode__container{
+  display: flex;
+}
+
+.input__promocode__form{
+  width: 649px;
+  height: 51px;
+  border: none;
+  background: rgba(196, 196, 196, 0.5);
+  font-size: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 20px;
+}
+
+.promocode__button{
+  width: 51px;
+  height: 51px;
+  border: none;
+  background: rgba(196, 196, 196, 0.5);
+  font-size: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 20px;
+}
+
+.promocode__button::after{
+  content: ' ';
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.promocode__button:hover{
+  background: #7a7a7a;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
